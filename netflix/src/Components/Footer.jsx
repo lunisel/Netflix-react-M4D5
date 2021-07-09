@@ -35,8 +35,8 @@ class Footer extends Component {
                         <Row className='mt-3 mb-auto' >
                             <li className='footer-li'>Contact Us</li>
                         </Row>
-                        <Row className='mt-3 mb-auto' style={{width:'6rem'}}>
-                            <li className='footer-li service'>Service Code</li>
+                        <Row className='mt-3 mb-auto' style={{width:'7rem'}}>
+                            <li className='footer-li service' style={{display:'flex'}}>Service Code</li>
                         </Row>
                         <Row className='mt-3 mb-auto' >
                             <li className='footer-li' style={{width:'27rem'}}>© 1997-2021 Netflix, Inc.</li>
