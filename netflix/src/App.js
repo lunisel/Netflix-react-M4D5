@@ -1,7 +1,6 @@
-
 import "./App.css";
 import FetchMovies from "./Components/FetchMovies";
-import AddComments from './AddComments'
+import CommentsArea from "./CommentArea";
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <FetchMovies saga="harry%20potter" />
       <FetchMovies saga="lord%20of%20the%20rings" />
       <FetchMovies saga="avengers" />
-      <AddComments / >
+      <CommentsArea />
     </>
   );
 }
