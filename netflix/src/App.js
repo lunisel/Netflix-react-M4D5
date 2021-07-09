@@ -1,10 +1,16 @@
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import UnderNavbar from './components/UnderNavbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
-   <div>
-     
-   </div>
+    <>
+      <NavBar />
+      <UnderNavbar/>
+      <Footer/>
+    </>
   );
 }
 
