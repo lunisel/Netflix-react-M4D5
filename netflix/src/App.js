@@ -1,10 +1,12 @@
-import './App.css';
+import "./App.css";
+import FetchMovies from "./Components/FetchMovies";
 
 function App() {
   return (
-   <div>
-     
-   </div>
+    <>
+      <FetchMovies saga="harry%20potter" />
+      <FetchMovies saga="lord%20of%20the%20rings" />
+    </>
   );
 }
 
