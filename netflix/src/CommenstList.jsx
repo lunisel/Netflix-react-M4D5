@@ -17,7 +17,7 @@ class CommentsList extends Component {
         try {
             let response = await fetch(url + this.props.imdbID, {
                 headers: {
-                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlM2JhOWNlYWY0ODAwMTVjOTE4NjYiLCJpYXQiOjE2MjI3OTg2NzksImV4cCI6MTYyNDAwODI3OX0.V8KJrn1i0Rq_N_xOj3dtZ9oHmcfsYcUrnb7KD9-0JG8"
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNWRmYmNlYWY0ODAwMTVjOTE5NDYiLCJpYXQiOjE2MjU4MzIwMTMsImV4cCI6MTYyNzA0MTYxM30.yQAL2m_pMwi-2cimzPUpNaT56uC0MyAyMLMPZkqOtLI" 
                 }
             })
 
@@ -37,7 +37,7 @@ class CommentsList extends Component {
             try {
                 let response = await fetch("https://striveschool-api.herokuapp.com/api/comments/" + this.props.imdbID, {
                     headers: {
-                        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlM2JhOWNlYWY0ODAwMTVjOTE4NjYiLCJpYXQiOjE2MjI3OTg2NzksImV4cCI6MTYyNDAwODI3OX0.V8KJrn1i0Rq_N_xOj3dtZ9oHmcfsYcUrnb7KD9-0JG8"
+                        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNWRmYmNlYWY0ODAwMTVjOTE5NDYiLCJpYXQiOjE2MjU4MzIwMTMsImV4cCI6MTYyNzA0MTYxM30.yQAL2m_pMwi-2cimzPUpNaT56uC0MyAyMLMPZkqOtLI" 
            }
                 })
 
@@ -61,7 +61,7 @@ class CommentsList extends Component {
             let response = await fetch("https://striveschool-api.herokuapp.com/api/comments/" + id, {
                 method: "DELETE",
                 headers: {
-                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlMzU3MWNlYWY0ODAwMTVjOTE4NjIiLCJpYXQiOjE2MjI3MjgxNjQsImV4cCI6MTYyMzkzNzc2NH0.9IIHO9P16tKwX-Ou8dNdpGV3lroNfYEEjkMGlNmsbhw"
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNWRmYmNlYWY0ODAwMTVjOTE5NDYiLCJpYXQiOjE2MjU4MzIwMTMsImV4cCI6MTYyNzA0MTYxM30.yQAL2m_pMwi-2cimzPUpNaT56uC0MyAyMLMPZkqOtLI" 
                 }
             })
 
