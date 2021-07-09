@@ -89,3 +89,7 @@ div.row {
 div.col {
     padding: 0;
 }
+
+h3 {
+    padding-left: 1rem;
+}

@@ -33,7 +33,10 @@ class FetchMovies extends Component {
         {this.state.arrMovies === "" ? (
           <Loading />
         ) : (
-          <DisplayMovies arrMovies={this.state.arrMovies} />
+          <>
+            <h3>{this.props.title}</h3>
+            <DisplayMovies arrMovies={this.state.arrMovies} />
+          </>
         )}
       </Container>
     );
