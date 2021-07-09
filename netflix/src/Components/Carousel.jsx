@@ -12,7 +12,7 @@ class DisplayMovies extends Component {
     console.log(this.state.movies);
     return (
       <>
-        <Carousel>
+        <Carousel interval={null}>
           <Carousel.Item>
             <Row style={{ height: "10rem" }}>
               {this.state.movies.slice(0, 5).map((m) => (
