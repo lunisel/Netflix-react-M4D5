@@ -7,10 +7,10 @@ class Footer extends Component {
         return(
             <Container className='footer-class'>
                 <Row className='mt-5 text-muted'>
-                    <AiFillFacebook className='mx-2 footer-icons' size='1x'/>
-                    <AiFillInstagram className='mx-2 footer-icons' size='1x'/>
-                    <AiOutlineTwitter className='mx-2 footer-icons' size='1x'/>
-                    <AiFillYoutube className='mx-2 footer-icons' size='1x'/>
+                    <AiFillFacebook className='mx-2 footer-icons' size='lg'/>
+                    <AiFillInstagram className='mx-2 footer-icons' size='lg'/>
+                    <AiOutlineTwitter className='mx-2 footer-icons' size='lg'/>
+                    <AiFillYoutube className='mx-2 footer-icons' size='lg'/>
                 </Row>
                 <Row className='ml-0 text-muted'>
                     <ul className='list-class'>
