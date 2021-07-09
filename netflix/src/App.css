@@ -1,0 +1,13 @@
+img {
+  object-fit: cover;
+}
+
+div.row {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-left: 1rem;
+}
+
+div.col {
+  padding: 0;
+}
