@@ -36,7 +36,11 @@ class DisplayMovies extends Component {
             <Row style={{ height: "10rem" }}>
               {this.state.movies.slice(5, 10).map((m) => (
                 <Col key={m.imdbID}>
-                  <img src={m.Poster} className="img-fluid" alt="movie-cover" />
+                  <img src={m.Poster} className="img-fluid" alt="movie-cover" onClick={() => {
+                      this.setState({
+                        selectedMovie: m,
+                      });
+                    }}/>
                 </Col>
               ))}
             </Row>
