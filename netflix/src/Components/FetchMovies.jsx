@@ -1,10 +1,12 @@
 import { Component } from "react";
 import DisplayMovies from "./Carousel";
+import { Container } from "react-bootstrap";
+import Loading from "./Loading";
 
 class FetchMovies extends Component {
   state = {
     query: this.props.saga,
-    arrMovies: [],
+    arrMovies: "",
   };
 
   componentDidMount = async () => {
@@ -26,11 +28,14 @@ class FetchMovies extends Component {
   };
 
   render() {
-    console.log(this.state.arrMovies);
     return (
-      <>
-        <DisplayMovies arrMovies={this.state.arrMovies} />
-      </>
+      <Container fluid>
+        {this.state.arrMovies === "" ? (
+          <Loading />
+        ) : (
+          <DisplayMovies arrMovies={this.state.arrMovies} />
+        )}
+      </Container>
     );
   }
 }

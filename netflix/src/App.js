@@ -6,6 +6,7 @@ function App() {
     <>
       <FetchMovies saga="harry%20potter" />
       <FetchMovies saga="lord%20of%20the%20rings" />
+      <FetchMovies saga="avengers" />
     </>
   );
 }
