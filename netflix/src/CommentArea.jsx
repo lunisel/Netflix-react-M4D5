@@ -1,7 +1,7 @@
 import React from "react";
 import CommentsList from "./CommenstList";
 import AddComments from "./AddComments";
-
+import { Row, Col } from "react-bootstrap";
 class CommentsArea extends React.Component {
   state = {
     updated: false,
@@ -40,16 +40,20 @@ class CommentsArea extends React.Component {
     return (
       <>
         {movie && comments && (
-          <>
-            <CommentsList
-              comments={comments}
-              fetchComments={this.fetchComments}
-            />
-            <AddComments
-              imdbID={this.state.movie.imdbID}
-              fetchComments={this.fetchComments}
-            />
-          </>
+          <Row>
+            <Col xs={6}>
+              <CommentsList
+                comments={comments}
+                fetchComments={this.fetchComments}
+              />
+            </Col>
+            <Col xs={6}>
+              <AddComments
+                imdbID={this.state.movie.imdbID}
+                fetchComments={this.fetchComments}
+              />
+            </Col>
+          </Row>
         )}
       </>
     );

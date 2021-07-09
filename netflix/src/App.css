@@ -2,6 +2,11 @@ img {
   object-fit: cover;
 }
 
+img:hover {
+  padding: 2px;
+  cursor: pointer;
+}
+
 div.row {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
